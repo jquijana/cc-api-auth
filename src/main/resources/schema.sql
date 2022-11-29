@@ -1,0 +1,1 @@
+create table users (user_id uuid DEFAULT random_uuid() primary key, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), created_date DateTime, modified_date DateTime, last_login_date DateTime, token uuid, is_active Boolean);
