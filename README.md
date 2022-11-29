@@ -21,5 +21,23 @@ Librerias usadas en de desarrollo.
 build and run 
 ```
 
+## Curl Example
+```sh
+curl --location --request POST 'http://localhost:8080/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "JHosef Q",
+    "email": "jquijan@hotmail.com",
+    "password": "Abc12345",
+    "phones": [
+        {
+            "number": "1234567",
+            "cityCode": "1",
+            "contryCode": "57"
+        }
+    ]
+}'
+```
+
 ## License
 Creative commons : **Jhosef Q**
