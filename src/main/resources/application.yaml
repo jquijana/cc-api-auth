@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    banner-mode: "off"
+  http:
+    encoding:
+      charset: "UTF-8"
+  jackson:
+    time-zone: "America/Lima"
+    date-format: "yyyy-MM-dd"
+    timestamp-format: "yyyy-MM-dd HH:mm:ss"
+  r2dbc:
+    url: "r2dbc:h2:mem:///testdb"
+    initialization-mode: always
+
+messsages:
+  email_exists_message: "El correo ya fue registrado"

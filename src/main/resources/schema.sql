@@ -1,0 +1,2 @@
+create table users (user_id uuid DEFAULT random_uuid() primary key, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), created_date DateTime, modified_date DateTime, last_login_date DateTime, token uuid, is_active Boolean);
+create table phones (number VARCHAR(10) primary key, user_id uuid, city_code VARCHAR(255), contry_code VARCHAR(255), created_date DateTime, modified_date DateTime, is_active Boolean,  FOREIGN KEY (user_id) REFERENCES users(user_id));
