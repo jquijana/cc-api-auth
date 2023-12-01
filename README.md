@@ -23,17 +23,22 @@ build and run
 
 ## Curl Example
 ```sh
-curl --location --request POST 'http://localhost:8080/users' \
+curl --location 'http://localhost:8080/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "name": "JHosef Q",
-    "email": "jquijan@hotmail.com",
+    "name": "Juan Rodriguez",
+    "email": "jquijanac@dominio.cl",
     "password": "Abc12345",
     "phones": [
         {
             "number": "1234567",
             "cityCode": "1",
-            "contryCode": "57"
+            "countryCode": "57"
+        },
+          {
+            "number": "abc",
+            "cityCode": "78954",
+            "countryCode": "111"
         }
     ]
 }'
